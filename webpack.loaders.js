@@ -3,14 +3,7 @@ const path = require('path');
 
 // Options passed to node-sass
 const sassIncludePaths = [
-  path.resolve(__dirname, 'styles'),
-];
-
-
-// These files will be imported in every sass file
-const sassResourcesPaths = [
-  path.resolve(__dirname, 'styles/abstracts/_variables.sass'),
-  path.resolve(__dirname, 'styles/abstracts/_mixins.sass'),
+  path.resolve(__dirname, 'static'),
 ];
 
 // noinspection WebpackConfigHighlighting
@@ -143,7 +136,7 @@ module.exports = [
   // (leave them as global css styles)
   {
     test: /\.(sass|scss)$/,
-    include: path.resolve(__dirname, 'styles/base'),
+    include: path.resolve(__dirname, 'static'),
     use: [
       {
         loader: "style-loader",
@@ -152,7 +145,6 @@ module.exports = [
         loader: "css-loader",
         options: {
           sourceMap: true,
-          camelCase: "dashes",
           importLoaders: 1
         }
       },
@@ -167,59 +159,9 @@ module.exports = [
         options: {
           sourceMap: true,
           outputStyle: "expanded",
-          indentedSyntax: "sass",
           includePaths: sassIncludePaths
         }
-      },
-      {
-        loader: "sass-resources-loader",
-        options: {
-          resources: sassResourcesPaths
-        }
-      }
-    ]
-  },
-  // Local SASS css-modules
-  // ======================
-  {
-    test: /\.(sass|scss)$/,
-    exclude: path.resolve(__dirname, 'styles/base'),
-    use: [
-      {
-        loader: "style-loader",
-      },
-      {
-        loader: "css-loader",
-        options: {
-          sourceMap: true,
-          camelCase: "dashes",
-          importLoaders: 1,
-          modules: true,
-          localIdentName: "[name]__[local]___[hash:base64:5]"
-        }
-      },
-      {
-        loader: "postcss-loader",
-        options: {
-          sourceMap: "inline",
-        }
-      },
-      {
-        loader: "sass-loader",
-        options: {
-          sourceMap: true,
-          outputStyle: "expanded",
-          indentedSyntax: "sass",
-          includePaths: sassIncludePaths
-        }
-      },
-      {
-        loader: "sass-resources-loader",
-        options: {
-          resources: sassResourcesPaths
-        },
       }
     ]
   }
-
 ];

@@ -38,6 +38,7 @@ module.exports = {
     ],
     alias: {
       "styles": path.resolve(__dirname, 'styles/'),
+      jquery: "jquery/src/jquery"
     }
   },
   devServer: {
