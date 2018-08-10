@@ -18,7 +18,7 @@ class App extends Component {
     return (
       <Scrollbars autoHide autoHideTimeout={1000} autoHideDuration={200}>
         <Router>
-          <div className='App container'>
+          <div className='App'>
             <Head/>
               <Header/>
               <Switch>

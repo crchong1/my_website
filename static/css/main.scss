@@ -1,20 +1,83 @@
 @import 'bootstrap';
 @import 'effects';
-@import 'pages';
 @import 'footer';
 @import 'header';
 
 $this-blue: #98c3ff;
-$dark-pink: #e6705b;
+$dark-pink: #b24e47;
 $light-pink: #ffe8e8;
 
 .body-container {
     background-color: $light-pink;
 }
+
+.title-text { // title text
+    font-family: 'Lato', sans-serif;
+    font-weight: 200;
+    font-size: 42px;
+    text-align: center; 
+    text-align-last: center;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: 50px;
+}
+// bolds the title
+.bolded {
+    font-family: 'Lato', sans-serif ;
+    font-weight: 600;
+}
+
 .jumbotron-title {
     background:  $light-pink;
 }
+
+@media (max-width: 320px) {
+    .title-text { // title text
+        font-size: 24px;
+        text-align: center; 
+        text-align-last: center;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 40px;
+    }
+    .jumbotron-title {
+        height: 90vh;
+    }
+    .jumbotron {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width: 576px) and (min-widgth: 320px) {
+    .title-text { // title text
+        font-size: 30px;
+        text-align: center; 
+        text-align-last: center;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-top: 40px;
+    }
+}
+  
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+    
+}
+
+@media (min-width: 1200px) {
+    
+}
+
 .svg-icon{
     margin-right: 30px;
     fill: #6c757d;
 }
+.jumbotron-middle {
+    background:  $dark-pink;
+    color: $light-pink;
+}
+
