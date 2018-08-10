@@ -15,13 +15,13 @@ class Header extends Component {
         </button>
         <div className="collapse navbar-collapse" id="navbarText">
           <ul className="navbar-nav mr-auto">
-            <li className="nav-item nav-header website-nav-item">
+            <li className="nav-item nav-header website-nav-item pr-4">
               <NavLink to="/" className="nav-link">Home</NavLink>
             </li>
-            <li className="nav-item nav-header website-nav-item">
+            <li className="nav-item nav-header website-nav-item pr-4">
               <NavLink to="/about" className="nav-link">About Me</NavLink>
             </li>
-            <li className="nav-item nav-header website-nav-item">
+            <li className="nav-item nav-header website-nav-item pr-4">
               <NavLink to="/resume" className="nav-link">Resume</NavLink>
             </li>
           </ul>

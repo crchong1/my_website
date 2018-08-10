@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import $ from 'jquery'; 
+import Email from "../../static/img/email.svg"
+import Github from "../../static/img/github.svg"
+import Linkedin from "../../static/img/linkedin.svg"
 
 class Home extends Component {
   constructor(props) {
@@ -24,22 +27,16 @@ class Home extends Component {
           <div className ="container">
             <h1 className="display-4 title-text">I'm <a className="bolded">Connor Chong</a>, a full stack developer, 
               violinist, and blogger at the University of Pennsylvania</h1>
-            <a href={this.state.email} onMouseOver={this.replaceEmail} onMouseLeave={this.replaceX}><span className="articleSvg" dangerouslySetInnerHTML={{__html: require("../../static/img/email.jsx")}}/></a>
-
-          </div>
-        </div>
-        <div className="container">
-          <div className="card">
-            <a data-toggle="collapse" data-target="#test-block">
-              <div className="card-header">
-                All Actions
-              </div>
-            </a>
-            <div id="test-block" className="collapse">
-              <div className="card-block">
-                <ul className="list-group">
-                </ul>
-              </div>
+            <div className="d-flex justify-content-center align-items-center pt-4">
+              <a href={this.state.email} onMouseOver={this.replaceEmail} onMouseLeave={this.replaceX}>
+                <Email className="svg-icon" width={50} height={50}/>
+              </a>
+              <a href='https://github.com/crchong1'>
+                <Github className="svg-icon" width={40} height={40}/>
+              </a>
+              <a href='https://www.linkedin.com/in/connor-chong/'>
+                <Linkedin className="svg-icon" width={40} height={40}/>
+              </a>
             </div>
           </div>
         </div>

@@ -65,10 +65,12 @@ module.exports = [
     exclude: path.resolve(__dirname, "node_modules"),
     use: [
       {
-        loader: "url-loader",
+        loader: "babel-loader"
+      },
+      {
+        loader: "react-svg-loader",
         options: {
-          limit: 10000,
-          mimetype: "image/svg+xml"
+          jsx: true // true outputs JSX tags
         }
       }
     ]
