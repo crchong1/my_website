@@ -11,8 +11,7 @@ class Footer extends Component {
     return(
       <div className="jumbotron jumbotron-fluid jumbotron-footer">
         <div className="container">
-          <h1 className="display-4">Footer</h1>
-          <p className="lead">Made by Connor Chong, {this.getYear()}</p>
+          <p className="lead text-secondary">Made by Connor Chong, {this.getYear()}</p>
         </div>
       </div>
     );

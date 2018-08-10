@@ -1,0 +1,10 @@
+$light-pink: #ffe8e8;
+
+.jumbotron-footer{
+    background:  $light-pink;
+    padding: 2rem 2rem;
+    .lead{
+        text-align: center;
+        font-size: 15px;
+    }
+}
