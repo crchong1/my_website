@@ -43,7 +43,7 @@ class Home extends Component {
             </div>
           </div>
         </div>
-        <div className="jumbotron jumbotron-fluid jumbotron-middle">
+        {/* <div className="jumbotron jumbotron-fluid jumbotron-middle">
           <div className ="container">
             <h1 className="display-4 title-text">About</h1>
             <p className="lead pl-3 pr-3">"Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -53,7 +53,7 @@ class Home extends Component {
                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
                qui officia deserunt mollit anim id est laborum."</p>
           </div>
-        </div>
+        </div> */}
       </div>
     );
   }

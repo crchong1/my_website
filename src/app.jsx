@@ -4,7 +4,6 @@ import styles from '../static/css/main.scss'
 import {
   BrowserRouter as Router,
   Route,
-  Redirect,
   Switch
 } from 'react-router-dom';
 import Home from './components/Home';
@@ -12,6 +11,7 @@ import Head from './components/Head';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import { Scrollbars } from 'react-custom-scrollbars';
+import Website from './components/Website';
 
 class App extends Component {
   render = () => {
@@ -23,6 +23,7 @@ class App extends Component {
               <Header/>
               <Switch>
                 <Route exact path="/" component={Home}/>
+                <Route path="/website" component={Website}/>
               </Switch>
               <Footer/>
           </div>

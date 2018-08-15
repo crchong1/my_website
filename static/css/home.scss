@@ -1,0 +1,73 @@
+$this-blue: #98c3ff;
+$dark-pink: #b24e47;
+$light-pink: #ffe8e8;
+
+.body-container {
+    background-color: $light-pink;
+}
+
+.title-text { // title text
+    font-family: 'Lato', sans-serif;
+    font-weight: 200;
+    font-size: 42px;
+    text-align: center; 
+    text-align-last: center;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: 50px;
+    // bolds the title
+    .bolded {
+        font-weight: 600;
+    }
+}
+
+.jumbotron-title {
+    background:  $light-pink;
+}
+
+@media (max-width: 320px) {
+    .title-text { // title text
+        font-size: 24px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 40px;
+    }
+    .jumbotron-title {
+        height: 90vh;
+    }
+    .jumbotron {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width: 576px){
+    .title-text { // title text
+        font-size: 32px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+}
+  
+@media (max-width: 768px) {
+    .title-text { // title text
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    
+}
+
+.svg-icon{
+    margin-right: 30px;
+    fill: #6c757d;
+}
+.jumbotron-middle {
+    background:  $dark-pink;
+    color: $light-pink;
+}
+
