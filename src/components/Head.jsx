@@ -1,7 +1,6 @@
 
 import React, { Component } from 'react';
 import {Helmet} from "react-helmet";
-// import SafariPinned from "../../static/img/webicons/safari-pinned-tab.svg";
 class Head extends Component {
     constructor(props) {
       super(props);

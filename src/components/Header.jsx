@@ -20,10 +20,10 @@ class Header extends Component {
           <div className="collapse navbar-collapse" id="navbarText">
             <ul className="navbar-nav mr-auto">
               <li className="nav-item nav-header website-nav-item pr-4">
-                <NavLink to="/about" className="nav-link">About Me</NavLink>
+                <NavLink to="#about" className="nav-link">About Me</NavLink>
               </li>
               <li className="nav-item nav-header website-nav-item pr-4">
-                <NavLink to="/resume" className="nav-link">Resume</NavLink>
+                <NavLink to="https://s3.amazonaws.com/website-connor-chong/Resume.pdf" target="_blank" className="nav-link">Resume</NavLink>
               </li>
             </ul>
             <ul className="navbar-nav ml-auto">

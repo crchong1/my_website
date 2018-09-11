@@ -24,6 +24,8 @@ class App extends Component {
               <Switch>
                 <Route exact path="/" component={Home}/>
                 <Route path="/website" component={Website}/>
+                <Route path="/mesh" component={Website}/>
+                <Route path="/rplus" component={Website}/>
               </Switch>
               <Footer/>
           </div>
